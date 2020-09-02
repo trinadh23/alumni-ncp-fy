@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/profile_page_script.js"></script>
@@ -30,6 +31,38 @@
           .panel[data-href]{
             cursor: pointer !important;
           }
+
+          .fa {
+  
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
   </style>
 </head>
 
@@ -37,8 +70,7 @@
 <hr>
 <div class="container bootstrap snippet">
     <div class="row">
-  		<div class="col-sm-10"><h1>User name</h1></div>
-    	<div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
+  		<div class="col-sm-10"><h1>Akash G</h1></div>
     </div>
     <div class="row">
   		<div class="col-sm-3">
@@ -52,21 +84,15 @@
 
                
           <div class="panel panel-default">
-            <div class="panel-heading">Website/ Social media/ Linkedin <i class="fa fa-link fa-1x"></i></div>
+            <div class="panel-heading">Website/ Social media/ Linkedin </div>
             <div class="panel-body"><a href="https://www.linkedin.com/in/akash-g/">Akash G linkedin profile</a></div>
           </div>
-          <ul class="list-group">
-            <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Shares</strong></span> 125</li>
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
-          </ul> 
+          
                
           <div class="panel panel-default">
             <div class="panel-heading">Social Media</div>
             <div class="panel-body">
-            	<i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+            	<a href='#' class="fa fa-facebook"></a> <a href='#' class="fa fa-twitter"></a> <a href='#' class="fa fa-linkedin"></a> <a href='#' class="fa fa-instagram"></a> <a href='#' class="fa fa-reddit"> <a href='#' class="fa fa-slack"></a>
             </div>
           </div>
           
@@ -138,8 +164,10 @@
                     <div class="form-group">
                          <div class="col-xs-12">
                               <br>
+                              <button type="button" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
                                 <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
                                  <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                 
                           </div>
                     </div>
                     
