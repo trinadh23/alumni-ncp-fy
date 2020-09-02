@@ -12,8 +12,13 @@ $(document).ready(function() {
             reader.readAsDataURL(input.files[0]);
         }
     }
-    
-
+    $(':input').attr('readonly','readonly');
+    $("#edit-button").click(function(){
+        $(':input').prop("readonly", false);
+      });
+      $("#save-button").click(function(){
+        $(':input').prop("readonly", false);
+      }); 
     $(".file-upload").on('change', function(){
         readURL(this);
     });
