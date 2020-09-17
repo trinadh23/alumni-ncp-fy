@@ -156,19 +156,22 @@
                     </div>
                     <div class="form-group">
                         
-                        
+                      <div class="col-xs-12">
                             <label for="bio"><h4>Bio</h4></label>
                             <textarea class="form-control" rows="6" id="bio"></textarea>
+                      </div>
                         
                     </div>
                     
                     <div class="form-group">
                          <div class="col-xs-12">
                               <br>
-                              <button type="button" class="btn btn-lg btn-primary" id="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
-                                <button class="btn btn-lg btn-success" type="submit" id="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                 <button class="btn btn-lg" type="reset" id="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
-                                 
+                              <div class="btn-toolbar">
+                              <button type="button" class="btn btn-lg btn-primary" id="edit-button" name="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+                                <button class="btn btn-lg btn-success" type="submit" id="save-button" name="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                 <button class="btn btn-lg" type="reset" id="reset-button" name="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                  <button class="btn btn-lg btn-danger" type="button" id="cancel-button" name="cancel-button"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+                              </div>   
                           </div>
                     </div>
                     
@@ -230,9 +233,12 @@
                       <div class="form-group">
                            <div class="col-xs-12">
                                 <br>
-                              	<button type="button" class="btn btn-lg btn-primary" id="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
-                                <button class="btn btn-lg btn-success" type="submit" id="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                 <button class="btn btn-lg" type="reset" id="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                              	<div class="btn-toolbar">
+                                  <button type="button" class="btn btn-lg btn-primary" id="edit-button" name="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+                                    <button class="btn btn-lg btn-success" type="submit" id="save-button" name="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                     <button class="btn btn-lg" type="reset" id="reset-button" name="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                      <button class="btn btn-lg btn-danger" type="button" id="cancel-button" name="cancel-button"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+                                  </div>
                             </div>
                       </div>
               	</form>
@@ -244,7 +250,7 @@
                   <hr>
                   
                     <h2>Academic achievements</h2>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal" >Add an achivement</button>
+                    <button type="button" id="add-achievement" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal" >Add an achivement</button>
                     
                     <div class="panel panel-info pannel_style" data-href='#achievementModal' id='achievement-pannel'>
                       
@@ -260,7 +266,7 @@
                     </div>
 
                     <h2>Sports and Culturals achievements</h2>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
+                    <button type="button" id="add-achievement" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
                     <div class="panel panel-info pannel_style" data-href='#achievementModal' id='achievement-pannel'>
                       
                       <div class="panel-heading">Best player of the tournament award - Table Tennis</div>
@@ -268,7 +274,7 @@
                       
                     </div>
                     <h2>Work achievements</h2>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
+                    <button type="button" id="add-achievement" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
                     <div class="panel panel-info pannel_style" data-href='#achievementModal' id='achievement-pannel'>
                       
                       <div class="panel-heading">Patent: Generative adversial networks</div>
@@ -276,13 +282,13 @@
                       
                     </div>
                     <h2>Other achievements</h2>
-                    <div class="panel panel-info pannel_style" data-href='#achievementModal' id='achievement-pannel'>
+                    <div class="panel  panel-info pannel_style" data-href='#achievementModal' id='achievement-pannel'>
                       
                       <div class="panel-heading">Public speaking competition runner up</div>
                       <div class="panel-body">December 2016</div>
                       
                     </div>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
+                    <button type="button" id="add-achievement" class="btn btn-info btn-lg" data-toggle="modal" data-target="#achievementModal">Add an achivement</button>
                     <div class="modal fade" id="achievementModal" role="dialog">
                         <div class="modal-dialog">
                         
@@ -354,7 +360,7 @@
                 <hr>
                 
                   <h2>Work experience</h2>
-                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#careerModal">Add a position</button>
+                  <button type="button" id="add-career" class="btn btn-info btn-lg" data-toggle="modal" data-target="#careerModal">Add a position</button>
                   <div class="panel panel-info pannel_style" data-href='#careerModal' id='achievement-pannel'>
                       
                     <div class="panel-heading">Data Scientist</div>
@@ -493,9 +499,12 @@
                        <div class="form-group">
                             <div class="col-xs-12">
                                  <br>
-                                 <button type="button" class="btn btn-lg btn-primary" id="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
-                                 <button class="btn btn-lg btn-success" type="submit" id="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                  <button class="btn btn-lg" type="reset" id="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                 <div class="btn-toolbar">
+                                  <button type="button" class="btn btn-lg btn-primary" id="edit-button" name="edit-button"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+                                    <button class="btn btn-lg btn-success" type="submit" id="save-button" name="save-button"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                     <button class="btn btn-lg" type="reset" id="reset-button" name="reset-button"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                      <button class="btn btn-lg btn-danger" type="button" id="cancel-button" name="cancel-button"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+                                  </div>
                              </div>
                        </div>
                    </form>
