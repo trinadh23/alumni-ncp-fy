@@ -69,6 +69,33 @@ $(document).ready(function() {
     $("body").on('click', '.panel[data-href]', function(){
         $($(this).data('href')).modal();
     });
+    jQuery.validator.addMethod("properbatch", function(value, element) {
+        return this.optional(element) || /[2][0]\d{2}-[2][0]\d{2}/.test(value);
+    }, "* Amount must be greater than zero");
+
+    $("#academicForm").validate({
+        // Specify validation rules
+        rules: {
+          // The key name on the left side is the name attribute
+          // of an input field. Validation rules are defined
+          // on the right side
+          batch: "properbatch",
+          cgpa: {
+              number: true,
+              max: 10
+          }
+        },
+        // Specify validation error messages
+        messages: {
+          batch: "Please enter correct batch (20xx-20xx)",
+          cgpa: "Enter a valid cgpa between 0 to 10"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
 
     
 });
